@@ -177,14 +177,12 @@ h6 {
 .header {
   position: fixed;
   width: 100%;
-  background-color: hsla(0,0%,98%,.9);
+  background-color: #f9f9f9;
   top: 0;
   left: 0;
   z-index: 50
 }
 .header__container {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -808,6 +806,12 @@ h6 {
   box-shadow: 0 0 10px #ff7b47
 }
 @media (min-width:67.5em) {
+  .header__container {
+    padding-top: 2.25rem
+  }
+  .header__container {
+    padding-bottom: 2.25rem
+  }
   .main-section__container {
     padding-top: 11.5rem
   }
@@ -849,6 +853,12 @@ h6 {
   }
 }
 @media (max-width:20em) {
+  .header__container {
+    padding-top: .9375rem
+  }
+  .header__container {
+    padding-bottom: .9375rem
+  }
   .main-section__container {
     padding-top: 6.25rem
   }
@@ -1104,6 +1114,26 @@ h6 {
   }
 }
 @media (min-width:20em) and (max-width:67.5em) {
+  @supports (padding-top:clamp(0.9375rem ,0.3848684211rem + 2.7631578947vw ,2.25rem)) {
+    .header__container {
+      padding-top: clamp(.9375rem ,.3848684211rem + 2.7631578947vw ,2.25rem)
+    }
+  }
+  @supports not (padding-top:clamp(0.9375rem ,0.3848684211rem + 2.7631578947vw ,2.25rem)) {
+    .header__container {
+      padding-top: calc(.9375rem + 1.3125 * (100vw - 20rem)/ 47.5)
+    }
+  }
+  @supports (padding-bottom:clamp(0.9375rem ,0.3848684211rem + 2.7631578947vw ,2.25rem)) {
+    .header__container {
+      padding-bottom: clamp(.9375rem ,.3848684211rem + 2.7631578947vw ,2.25rem)
+    }
+  }
+  @supports not (padding-bottom:clamp(0.9375rem ,0.3848684211rem + 2.7631578947vw ,2.25rem)) {
+    .header__container {
+      padding-bottom: calc(.9375rem + 1.3125 * (100vw - 20rem)/ 47.5)
+    }
+  }
   @supports (padding-top:clamp(6.25rem ,4.0394736842rem + 11.0526315789vw ,11.5rem)) {
     .main-section__container {
       padding-top: clamp(6.25rem ,4.0394736842rem + 11.0526315789vw ,11.5rem)
