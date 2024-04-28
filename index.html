@@ -1,179 +1,504 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+	<title>HomePage</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240428145902">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «agency»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «agency»</h1>
-		<div class="rootpage__info">
-			Опис проєкту
-		</div>
-		<h2>Готові сторінки:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Головна</a></li>
-		</ol>
-		<h2>Попапи:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Дякую за замовлення!</h2>
-			<p>Буду радий (да) гарному відгуку.</p>
-			<p>Звертайтесь ще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мої контакти:</h2>
-			<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. мережі: <a href="">посилання</a></p>
-		</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<img src="img/header/logo.svg" alt="Logo" />
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu">
+						<span></span>
+					</button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Product</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Pricing</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="main-section">
+				<div data-watch data-watch-once class="main-section__container">
+					<div class="main-section__content">
+						<h1 class="main-section__title">
+							Finance and Consultancy Solution
+						</h1>
+						<div class="main-section__text">
+							We know how large objects will act, but things
+							on a small scale.
+						</div>
+						<div class="main-section__action">
+							<a href="#" class="main-section__button button">Get Quote Now</a>
+							<a href="#" class="main-section__button--transparent button--transparent">Learn More</a>
+						</div>
+					</div>
+
+					<div class="main-section__cards cards-main">
+						<div class="cards-main__item">
+							<div class="cards-main__icon _icon-tool-box"></div>
+							<h3 class="cards-main__title">
+								Environmental Consulting
+							</h3>
+							<div class="cards-main__text">
+								We focus on ergonomics and meeting you where
+								you work.
+							</div>
+						</div>
+						<div class="cards-main__item">
+							<div class="cards-main__icon _icon-shop"></div>
+							<h3 class="cards-main__title">
+								Finance and consultancy
+							</h3>
+							<div class="cards-main__text">
+								Just type what's on your mind and we'll get
+								you there.
+							</div>
+						</div>
+						<div class="cards-main__item">
+							<div class="cards-main__icon _icon-notebook"></div>
+							<h3 class="cards-main__title">
+								Financial Services Consulting
+							</h3>
+							<div class="cards-main__text">
+								the quick fox jumps over the lazy dog
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="features">
+				<div data-watch data-watch-once data-watch-threshold="0.4" class="features__container features__container--a">
+					<div class="features__header">
+						<h2 class="features__title">
+							Designing Better Experience
+						</h2>
+						<div class="features__text">
+							Problems trying to resolve the conflict between
+							the two major realms of Classical physics:
+							Newtonian mechanics
+						</div>
+					</div>
+					<div class="features__cards cards-features">
+						<div class="cards-features__item">
+							<div class="cards-features__icon _icon-users-line"></div>
+							<h3 class="cards-features__title">972 +</h3>
+							<div class="cards-features__label">
+								Consumer Products
+							</div>
+						</div>
+						<div class="cards-features__item">
+							<div class="cards-features__icon _icon-stats"></div>
+							<h3 class="cards-features__title">181 +</h3>
+							<div class="cards-features__label">
+								Financial Services
+							</div>
+						</div>
+						<div class="cards-features__item">
+							<div class="cards-features__icon _icon-award"></div>
+							<h3 class="cards-features__title">98%</h3>
+							<div class="cards-features__label">
+								Environmental
+							</div>
+						</div>
+						<div class="cards-features__item">
+							<div class="cards-features__icon _icon-tool-box"></div>
+							<h3 class="cards-features__title">746 +</h3>
+							<div class="cards-features__label">
+								Business & Finance
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="advice">
+				<div data-watch data-watch-once data-watch-threshold="0.4" class="advice__container advice__container--a">
+					<div class="advice__header">
+						<div class="advice__title">Practice Advice</div>
+						<div class="advice__text">
+							Problems trying to resolve the conflict between
+							the two major realms of Classical physics:
+							Newtonian mechanics
+						</div>
+					</div>
+					<div class="advice__cards cards-advice">
+						<div class="cards-advice__item">
+							<div class="cards-advice__content">
+								<h4 class="cards-advice__heading">
+									A single source of truth
+								</h4>
+								<div class="cards-advice__text">
+									Newton thought that light was made up of
+									particles, but then it was discovered
+								</div>
+							</div>
+
+							<div class="cards-advice__img">
+								<img class="ibg" src="img/advice/1.webp" alt="Image" />
+							</div>
+						</div>
+						<div class="cards-advice__item">
+							<div class="cards-advice__content">
+								<h4 class="cards-advice__heading">
+									Fastest way to organize
+								</h4>
+								<div class="cards-advice__text">
+									“Quantum mechanics” is the description
+									of the behaviour of matter
+								</div>
+							</div>
+
+							<div class="cards-advice__img">
+								<img class="ibg" src="img/advice/2.webp" alt="Image" />
+							</div>
+						</div>
+						<div class="cards-advice__item">
+							<div class="cards-advice__content">
+								<h4 class="cards-advice__heading">
+									Fastest way to take action
+								</h4>
+								<div class="cards-advice__text">
+									They describe a universe consisting of
+									bodies moving
+								</div>
+							</div>
+
+							<div class="cards-advice__img">
+								<img class="ibg" src="img/advice/3.webp" alt="Image" />
+							</div>
+						</div>
+						<div class="cards-advice__item">
+							<div class="cards-advice__content">
+								<h4 class="cards-advice__heading">
+									Work better together
+								</h4>
+								<div class="cards-advice__text">
+									They finally obtained a consistent
+									description of the behaviour
+								</div>
+							</div>
+
+							<div class="cards-advice__img">
+								<img class="ibg" src="img/advice/4.webp" alt="Image" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="who-we-are">
+				<div data-watch data-watch-once data-watch-threshold="0.4" class="who-we-are__container who-we-are__container--a">
+					<div class="who-we-are__heading">
+						<h3 class="who-we-are__title">Who We Are</h3>
+						<div class="who-we-are__subtitle">
+							Problems trying to resolve the conflict between
+							the two major realms of Classical physics:
+							Newtonian mechanics
+						</div>
+					</div>
+					<div class="who-we-are__columns">
+						<div class="who-we-are__column">
+							<div class="who-we-are__image">
+								<img src="img/who_we_are/cover.webp" alt="Image" />
+							</div>
+						</div>
+						<div class="who-we-are__column column-who-we-are">
+							<h4 class="column-who-we-are__title">
+								Most trusted in our field
+							</h4>
+							<p class="column-who-we-are__text">
+								Most calendars are designed for teams. Slate
+								is designed for freelancers who want a
+								simple way to plan their schedule.
+							</p>
+							<ul class="column-who-we-are__list list-column">
+								<div class="list-column__item">
+									<div class="list-column__icon _icon-users-line"></div>
+									<div class="list-column__content">
+										<h5 class="list-column__title">
+											the quick fox jumps over the
+											lazy dog
+										</h5>
+										<div class="list-column__label">
+											Things on a very small scale ...
+										</div>
+									</div>
+								</div>
+								<div class="list-column__item">
+									<div class="list-column__icon _icon-speed"></div>
+									<div class="list-column__content">
+										<h5 class="list-column__title">
+											the quick fox jumps over the
+											lazy dog
+										</h5>
+										<div class="list-column__label">
+											Things on a very small scale ...
+										</div>
+									</div>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="clients">
+				<div data-watch data-watch-once data-watch-threshold="0.7" class="clients__container clients__container--a">
+					<div class="clients__item">
+						<img src="img/clients/1.svg" alt="Image" />
+					</div>
+					<div class="clients__item">
+						<img src="img/clients/2.svg" alt="Image" />
+					</div>
+					<div class="clients__item">
+						<img src="img/clients/3.svg" alt="Image" />
+					</div>
+					<div class="clients__item">
+						<img src="img/clients/4.svg" alt="Image" />
+					</div>
+					<div class="clients__item">
+						<img src="img/clients/5.svg" alt="Image" />
+					</div>
+					<div class="clients__item">
+						<img src="img/clients/6.svg" alt="Image" />
+					</div>
+				</div>
+			</div>
+			<section class="subscribe">
+				<div class="subscribe__container">
+					<h4 class="subscribe__title">
+						Subscribe For Latest Newsletter
+					</h4>
+					<form class="subscribe__form" action="files/sendmail/sendmail.php" method="POST">
+						<input type="text" name="form[email]" data-error="Error" placeholder="Your Email" class="subscribe__input" />
+						<button type="submit" class="subscribe__button">
+							Subscribe
+						</button>
+					</form>
+				</div>
+			</section>
+			<section class="get-in-touch">
+				<div data-watch data-watch-once data-watch-threshold="0.4" class="get-in-touch__container get-in-touch__container--a">
+					<div class="get-in-touch__heading">
+						<h3 class="get-in-touch__title">Get In Touch</h3>
+						<h5 class="get-in-touch__subtitle">
+							Problems trying to resolve the conflict between
+							<br />
+							the two major realms of Classical physics:
+							Newtonian mechanics
+						</h5>
+					</div>
+					<div class="get-in-touch__cards cards-get-in-touch">
+						<div class="cards-get-in-touch__item">
+							<div class="cards-get-in-touch__icon _icon-call"></div>
+							<div class="cards-get-in-touch__emails">
+								<div class="cards-get-in-touch__email">
+									georgia.young@example.com
+								</div>
+
+								<div class="cards-get-in-touch__email2">
+									georgia.young@ple.com
+								</div>
+							</div>
+
+							<div class="cards-get-in-touch__label">
+								Get Support
+							</div>
+							<a href="#" class="cards-get-in-touch__button">Submit Request</a>
+						</div>
+						<div class="cards-get-in-touch__item cards-get-in-touch__item--second">
+							<div class="cards-get-in-touch__icon _icon-location"></div>
+							<div class="cards-get-in-touch__emails">
+								<div class="cards-get-in-touch__email">
+									georgia.young@example.com
+								</div>
+
+								<div class="cards-get-in-touch__email2">
+									georgia.young@ple.com
+								</div>
+							</div>
+							<div class="cards-get-in-touch__label">
+								Get Support
+							</div>
+							<a href="#" class="cards-get-in-touch__button">Submit Request</a>
+						</div>
+						<div class="cards-get-in-touch__item">
+							<div class="cards-get-in-touch__icon _icon-messagel"></div>
+							<div class="cards-get-in-touch__emails">
+								<div class="cards-get-in-touch__email">
+									georgia.young@example.com
+								</div>
+
+								<div class="cards-get-in-touch__email2">
+									georgia.young@ple.com
+								</div>
+							</div>
+							<div class="cards-get-in-touch__label">
+								Get Support
+							</div>
+							<a href="#" class="cards-get-in-touch__button">Submit Request</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="consulting">
+				<div data-watch data-watch-once data-watch-threshold="0.4" class="consulting__container consulting__container--a">
+					<div class="consulting__content">
+						<h4 class="consulting__title">
+							Consulting Agency For Your Business
+						</h4>
+						<h5 class="consulting__subtitle">
+							the quick fox jumps over the lazy dog
+						</h5>
+					</div>
+					<div class="consulting__action">
+						<a href="#" class="consulting__button">Contact Us</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div data-watch data-watch-once data-watch-threshold="0.5" class="footer__container footer__container--a">
+				<div class="footer__main">
+					<nav class="footer__navigation navigation-footer">
+						<div class="navigation-footer__column">
+							<div class="navigation-footer__label">Company Info</div>
+							<ul class="navigation-footer__list">
+								<li class="navigation-footer__item">
+									<a href="#">About Us</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">Carrier</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">We are hiring</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">Blog</a>
+								</li>
+							</ul>
+						</div>
+						<div class="navigation-footer__column">
+							<div class="navigation-footer__label">Legal</div>
+							<ul class="navigation-footer__list">
+								<li class="navigation-footer__item">
+									<a href="#">About Us</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">Carrier</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">We are hiring</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">Blog</a>
+								</li>
+							</ul>
+						</div>
+						<div class="navigation-footer__column">
+							<div class="navigation-footer__label">Features</div>
+							<ul class="navigation-footer__list">
+								<li class="navigation-footer__item">
+									<a href="#">Business Marketing</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">User Analytic</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">Live Chat</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">Unlimited Support</a>
+								</li>
+							</ul>
+						</div>
+						<div class="navigation-footer__column">
+							<div class="navigation-footer__label">Resources</div>
+							<ul class="navigation-footer__list">
+								<li class="navigation-footer__item">
+									<a href="#">IOS & Android</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">Watch a Demo</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">Customers</a>
+								</li>
+								<li class="navigation-footer__item">
+									<a href="#">API</a>
+								</li>
+							</ul>
+						</div>
+						<div class="navigation-footer__column">
+							<div class="navigation-footer__label">Get In Touch</div>
+							<ul class="navigation-footer__list">
+								<li class="navigation-footer__item">
+									<div class="navigation-footer__icon _icon-call"></div>
+									<a href="#" type="tel" class="">(480) 555-0103</a>
+								</li>
+								<li class="navigation-footer__item">
+									<div class="navigation-footer__icon _icon-location"></div>
+									<a href="#" class="">4517 Washington Ave</a>
+								</li>
+
+								<li class="navigation-footer__item">
+									<div class="navigation-footer__icon _icon-messagel"></div>
+									<a href="#" class="">debra.holt@example.com</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div data-watch data-watch-once class="footer-bottom">
+				<div class="footer-bottom__container">
+					<div class="footer-bottom__rights">
+						Made With Love By Figmaland All Right Reserved
+					</div>
+					<div class="footer-bottom__socials socials">
+						<div class="socials__item">
+							<img src="img/footer/facebook.svg" alt="Image" />
+						</div>
+						<div class="socials__item">
+							<img src="img/footer/insta.svg" alt="Image" />
+						</div>
+						<div class="socials__item">
+							<img src="img/footer/twitter.svg" alt="Image" />
+						</div>
+						<div class="socials__item">
+							<img src="img/footer/youtube.svg" alt="Image" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
 	</div>
+	<script src="js/app.min.js?_v=20240428145902"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
