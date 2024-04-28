@@ -270,6 +270,22 @@ h6 {
   justify-content: center;
   align-items: center
 }
+[class*=__container--a] {
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+  transform: translateY(200px);
+  transition: opacity 1s ease 0s,-webkit-transform 1s ease 0s;
+  transition: opacity 1s ease 0s,transform 1s ease 0s;
+  transition: opacity 1s ease 0s,transform 1s ease 0s,-webkit-transform 1s ease 0s
+}
+[class*=__container--a]._watcher-view {
+  opacity: 1;
+  transition: opacity 1s ease 0s,-webkit-transform 1s ease 0s;
+  transition: opacity 1s ease 0s,transform 1s ease 0s;
+  transition: opacity 1s ease 0s,transform 1s ease 0s,-webkit-transform 1s ease 0s;
+  -webkit-transform: translateY(0);
+  transform: translateY(0)
+}
 .main-section {
   background: url(../img/main/cover.webp) center no-repeat;
   background-size: cover
@@ -309,10 +325,10 @@ h6 {
   border-radius: 37px;
   background-color: #ff7b47;
   padding: 10px 36px;
-  transition: all .3s ease 0s
+  transition: background-color,color .3s ease 0s
 }
 .main-section__button:hover {
-  transition: all .3s ease 0s;
+  transition: background-color,color .3s ease 0s;
   box-shadow: 0 0 15px #ff7b47
 }
 .main-section__button--transparent {
@@ -324,7 +340,7 @@ h6 {
   letter-spacing: .2px;
   border-radius: 37px;
   border: 1px solid #0d5c63;
-  transition: all .5s ease 0s;
+  transition: background-color,color .5s ease 0s;
   padding: 10px 36px
 }
 .main-section__button--transparent:hover {
@@ -346,11 +362,11 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  transition: all .5s ease 0s
+  transition: color,background-color .5s ease 0s
 }
 .cards-main__item:hover {
-  transition: all .5s ease 0s;
-  background: #0d5c63
+  transition: color,background-color .5s ease 0s;
+  background-color: #0d5c63
 }
 .cards-main__item:hover .cards-main__icon {
   color: #fff
@@ -626,8 +642,8 @@ h6 {
   max-height: 77px
 }
 .subscribe__container {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-65%);
+  transform: translateY(-65%);
   max-width: 986px;
   padding: 30px 50px;
   display: flex;
